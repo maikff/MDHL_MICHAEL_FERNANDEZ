@@ -4,40 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style_1.css" />
   </head>
   <body>
-    <header>
-      <figure>
-        <img
-          src="./assets/img/Logo Mighty ducks-01.png"
-          alt="logo_mighty_ducks.png"
-          height="100px"
-          align="left"
-        />
-      </figure>
-      <div>
-        <h1>Mighty Ducks Hockey League</h1>
-      </div>
-      <nav>
-        <a href="./index.html">Inicio</a>
-        |
-        <a href="./about.html">About MDHL</a>
-        |
-        <a href="#">Contact</a>
-      </nav>
+    <header class="cabecera">
+      <h1 class="cabecera-titulo_principal">Mighty Ducks Hockey League</h1>
+      <h2 class="cabecera-titulo_secundario">Contact</h2>
+      <img
+        class="cabecera-logo-img"
+        src="./assets/img/Logo Mighty ducks-01.png"
+        alt="logo_mighty_ducks.png"
+        height="100px"
+        align="left"
+      />
     </header>
-    <br />
-    <main>
-      <figure>
-        <img src="./assets/img/hockey 3.jpg" alt="hockey_3.jpg" width="150px" />
-      </figure>
-      <p>
-        Please email us at
-        <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
-      </p>
-      <p>We reply to your email as soon as we can.</p>
+    <main class="contenido">
+      <nav class="contenido-menu">
+        <ul class="contenido-menu-lista">
+          <li
+            class="contenido-menu-lista-opcion"
+            class="contenido-menu-lista-link"
+          >
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li
+            class="contenido-menu-lista-opcion"
+            class="contenido-menu-lista-link"
+          >
+            <a href="./about.html">About MDHL</a>
+          </li>
+          <li
+            class="contenido-menu-lista-opcion"
+            class="contenido-menu-lista-link_activo"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contenido-contacto">
+        <p class="contenido-contacto-email">
+          Please email us at
+          <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+        </p>
+        <p>We reply to your email as soon as we can.</p>
+      </div>
     </main>
   </body>
 </html>

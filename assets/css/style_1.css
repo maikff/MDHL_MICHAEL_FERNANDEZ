@@ -1,0 +1,107 @@
+.cabecera-banner {
+  background-image: url(../img/hockey\ \ 1.jpg);
+  background-size: cover;
+  padding: 25vh;
+}
+.cabecera-banner-titulo_principal {
+  margin: 0;
+  font-family: "Racing Sans One", cursive;
+  font-size: 5rem;
+  -webkit-text-fill-color: rgba(248, 225, 46, 255);
+  -webkit-text-stroke: 1px rgb(146, 76, 40);
+  text-align: center;
+}
+
+.cabecera-container {
+  background-color: rgba(198, 72, 50, 255);
+  padding: 3vh 0;
+}
+.cabecera-container-titulo_secundario {
+  margin: 0 35vh 0 0;
+  text-align: center;
+  color: white;
+  font-family: "Racing Sans One", cursive;
+}
+
+.cabecera-container-logo {
+  background-color: rgba(198, 72, 50, 255);
+  width: 200px;
+  float: right;
+  margin: -15vh 25vh 0 0;
+  border-radius: 25%;
+}
+
+.contenido {
+  background-color: rgba(33, 25, 21, 255);
+  display: block;
+  padding-top: 8%;
+}
+
+.contenido-menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contenido-menu-lista {
+  list-style: none;
+  display: inline-block;
+}
+
+.contenido-menu-lista-opcion {
+  text-decoration: none;
+  display: block;
+}
+
+.contenido-menu-lista-link {
+  display: inline-block;
+  width: 8rem;
+  text-decoration: none;
+  height: 1rem;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bolder;
+  background-color: rgba(95, 161, 153, 255);
+  color: rgba(248, 225, 46, 255);
+  border-radius: 1rem;
+  border: 2px solid;
+  border-color: rgba(198, 72, 50, 255);
+  margin: 0.25em;
+  font-family: "Racing Sans One", cursive;
+}
+
+.contenido-menu-lista-link_activo {
+  display: inline-block;
+  width: 8rem;
+  text-decoration: none;
+  height: 1rem;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: bolder;
+  background-color: rgba(95, 161, 153, 255);
+  color: rgba(248, 225, 46, 255);
+  border-radius: 1rem;
+  border: 2px solid;
+  border-color: rgba(198, 72, 50, 255);
+  margin: 0.25em;
+  font-family: "Racing Sans One", cursive;
+}
+
+.contenido-eventos {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.contenido-eventos-lista-fecha_evento {
+  color: white;
+  list-style: circle;
+  font-family: "Racing Sans One", cursive;
+}
+
+.contenido-eventos-lista-fecha_evento strong {
+  color: ;
+}
+
+.contenido-eventos-lista-fecha_evento p {
+  padding-left: 5%;
+  font-family: "Racing Sans One", cursive;
+}
