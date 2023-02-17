@@ -1,117 +1,133 @@
+html {
+  font-family: "Racing Sans One", cursive;
+}
 .cabecera-banner {
   background-image: url(../img/hockey\ \ 1.jpg);
   background-size: cover;
-  padding: 25vh;
+  padding: 20vh;
 }
 .cabecera-banner-titulo_principal {
   margin: 0;
-  font-family: "Racing Sans One", cursive;
   font-size: 5rem;
-  -webkit-text-fill-color: rgba(248, 225, 46, 255);
+  -webkit-text-fill-color: rgb(248, 225, 46);
   -webkit-text-stroke: 1px rgb(146, 76, 40);
   text-align: center;
 }
 
 .cabecera-container {
-  background-color: rgba(198, 72, 50, 255);
+  background-color: rgb(198, 72, 50);
   padding: 3vh 0;
+  position: relative;
 }
 .cabecera-container-titulo_secundario {
   margin: 0 35vh 0 0;
   text-align: center;
   color: white;
-  font-family: "Racing Sans One", cursive;
 }
 
 .cabecera-container-logo {
-  background-color: rgba(198, 72, 50, 255);
+  background-color: rgb(198, 72, 50);
+  position: absolute;
+  top: -8vh;
+  right: 10%;
   width: 200px;
-  float: right;
-  margin: -15vh 25vh 0 0;
   border-radius: 25%;
 }
 
 .contenido {
-  background-color: rgba(33, 25, 21, 255);
-  display: block;
-  padding-top: 6%;
+  background-color: rgb(33, 25, 21);
+  width: 100%;
 }
 
 .contenido-menu {
   display: inline-block;
   vertical-align: top;
+  margin: 2% 5%;
 }
 
 .contenido-menu-lista {
   list-style: none;
   display: inline-block;
+  width: auto;
+  padding: 0;
+  width: auto;
 }
 
 .contenido-menu-lista-opcion {
   text-decoration: none;
   display: block;
   margin: 5%;
+  width: auto;
 }
 
 .contenido-menu-lista-link {
   display: inline-block;
-  width: 15rem;
+  width: 6em;
   text-decoration: none;
-  height: 1.5rem;
   text-align: center;
   padding: 0.6rem;
   font-weight: bolder;
-  background-color: rgba(95, 161, 153, 255);
-  color: rgba(248, 225, 46, 255);
+  background-color: rgb(95, 161, 153);
+  color: rgb(248, 225, 46);
   border-radius: 1rem;
-  border: 2px solid;
-  border-color: rgba(198, 72, 50, 255);
-  margin: 0.25em;
-  font-family: "Racing Sans One", cursive;
-  font-size: 1.5rem;
+  border: 2px solid rgb(198, 72, 50);
+  font-size: 1.5em;
 }
 
 .contenido-menu-lista-link_activo {
   display: inline-block;
-  width: 15rem;
+  width: 6em;
   text-decoration: none;
-  height: 1.5rem;
   text-align: center;
   padding: 0.6rem;
   font-weight: bolder;
   background-color: rgb(194, 93, 79);
-  color: rgba(248, 225, 46, 255);
+  color: rgb(248, 225, 46);
   border-radius: 1rem;
-  border: 2px solid;
-  border-color: rgba(198, 72, 50, 255);
-  margin: 0.25em;
-  font-family: "Racing Sans One", cursive;
-  font-size: 1.5rem;
+  border: 2px solid rgb(198, 72, 50);
+  font-size: 1.5em;
 }
 
 .contenido-eventos {
+  position: relative;
+  left: 15%;
   display: inline-block;
-  margin-left: 15%;
-  padding-bottom: 20vh;
+  width: auto;
+}
+
+.contenido-eventos-lista {
+  position: relative;
+  list-style: none;
+  margin-top: 5%;
+  right: 15%;
+}
+
+.contenido-eventos-lista-fecha_evento::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 5px; /* Opcional: agrega un espacio entre el icono y el texto */
+  background-image: url("../img/icono_arco.png"); /* Reemplaza "ruta-a-tu-imagen" con la ubicación real de la imagen */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contenido-eventos-lista-fecha_evento {
   color: white;
-  list-style: circle;
-  font-family: "Racing Sans One", cursive;
   font-size: 1.5rem;
 }
 
-.contenido-eventos-lista-fecha_evento strong {
-  color: rgba(248,225,46,255);
-  -webkit-text-fill-color: rgba(248, 225, 46, 255);
+.contenido-eventos-lista-fecha_evento-fecha {
+  display: inline-block;
+  -webkit-text-fill-color: rgb(248, 225, 46);
   -webkit-text-stroke: 1px rgb(146, 76, 40);
   font-size: 2rem;
 }
 
-.contenido-eventos-lista-fecha_evento p {
-  padding-left: 5%;
-  font-family: "Racing Sans One", cursive;
+.contenido-eventos-lista-fecha_evento-evento {
+  display: block;
+  margin-left: 5%;
 }
 
 /* #########ABOUT########## */
@@ -119,26 +135,38 @@
 .contenido-about {
   display: inline-block;
   width: 50%;
-  margin-left: 15%;
+  margin: 5% 5%;
   padding-bottom: 20vh;
+}
+
+.contenido-about-lista-info::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 5px; /* Opcional: agrega un espacio entre el icono y el texto */
+  background-image: url("../img/icono_arco.png"); /* Reemplaza "ruta-a-tu-imagen" con la ubicación real de la imagen */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .contenido-about-lista-info {
   color: white;
-  list-style: circle;
-  font-family: "Racing Sans One", cursive;
+  list-style: none;
   font-size: 1.5rem;
 }
 
-.contenido-about-lista-info strong {
-  color: rgba(248,225,46,255);
-  -webkit-text-fill-color: rgba(248, 225, 46, 255);
+.contenido-about-lista-info-tittle {
+  color: rgb(248, 225, 4);
+  -webkit-text-fill-color: rgb(248, 225, 46);
   -webkit-text-stroke: 1px rgb(146, 76, 40);
   font-size: 2rem;
 }
 
-.contenido-about-lista-info p {
-  padding-left: 5%;
+.contenido-about-lista-info-info {
+  padding-left: 10%;
+  margin-top: 2%;
+  width: 120%;
 }
 
 /* #####CONTACT##### */
@@ -148,12 +176,10 @@
   width: 50%;
   margin-left: 15%;
   margin-top: 2%;
-  padding-bottom: 20vh;
+  padding-bottom: 20%;
 }
 
 .contenido-contact p {
   color: white;
-  list-style: circle;
-  font-family: "Racing Sans One", cursive;
   font-size: 2rem;
 }
