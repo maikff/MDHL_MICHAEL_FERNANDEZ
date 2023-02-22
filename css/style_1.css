@@ -89,17 +89,15 @@ html {
 }
 
 .contenido-eventos {
-  position: relative;
-  left: 15%;
   display: inline-block;
-  width: auto;
+  width: 80vh;
 }
 
 .contenido-eventos-lista {
   position: relative;
   list-style: none;
   margin-top: 5%;
-  right: 15%;
+  right: 5%;
 }
 
 .contenido-eventos-lista-fecha_evento::before {
@@ -107,8 +105,8 @@ html {
   display: inline-block;
   width: 26px;
   height: 26px;
-  margin-right: 5px; /* Opcional: agrega un espacio entre el icono y el texto */
-  background-image: url("../img/icono_arco.png"); /* Reemplaza "ruta-a-tu-imagen" con la ubicación real de la imagen */
+  margin-right: 5px;
+  background-image: url("../img/icono_arco.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -118,7 +116,7 @@ html {
   font-size: 1.5rem;
 }
 
-.contenido-eventos-lista-fecha_evento-fecha {
+.contenido-eventos-lista-fecha_evento-fecha, h3 {
   display: inline-block;
   -webkit-text-fill-color: rgb(248, 225, 46);
   -webkit-text-stroke: 1px rgb(146, 76, 40);
@@ -211,11 +209,11 @@ td {
   font-size: 2rem;
 }
 
-
 form {
   display: inline-block;
   padding: 2rem;
-  background-color:   border: 0.5rem solid rgb(146, 76, 40);
+  background-color: rgb(95, 161, 153);
+  border: 0.5rem solid rgb(146, 76, 40);
   margin: 2rem;
   border-radius: 2rem;
 }
@@ -226,17 +224,16 @@ legend {
 
 legend span {
   text-align: center;
-  font-weight: bold;
 }
 
 label {
   padding-right: 1rem;
 }
 
-input[type=text],
-input[type=number],
-input[type=date] {
-  width: 40%;
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 65%;
   color: black;
   padding: 1vw;
   margin: 1vw;
@@ -246,17 +243,17 @@ input[type=date] {
   box-sizing: border-box;
 }
 
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   color: black;
 
   display: inline-block;
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 30%;
-  background-color: darkgreen;
+  background-color: rgb(146, 76, 40);
   font-size: larger;
   font-weight: bold;
   color: white;
@@ -267,6 +264,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: green;
+input[type="submit"]:hover {
+  background-color: darkorange;
 }
